@@ -8,17 +8,11 @@ CFG files play a critical role in gameplay performance and fairness. This tool e
 Clean and optimized
 Free from suspicious or restricted commands
 Ready for competitive or server use
+
 💡 Use Cases
 Competitive players verifying configs before matches
 Server admins enforcing fair play
 Developers analyzing CFG behavior
-🛠 Tech Stack
 
-(Add your stack here, for example:)
-
-Python / JavaScript / Flask
-File parsing & pattern detection
-Rule-based validation engine
 📌 Status
-
 Actively developed and continuously improving with new detection rules and performance enhancements.
