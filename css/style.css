@@ -1,0 +1,169 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at top, #0f172a, #020617);
+    color: #e2e8f0;
+    min-height: 100vh;
+}
+
+/* Layout */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    color: #38bdf8;
+}
+
+.header p {
+    color: #94a3b8;
+    margin-top: 8px;
+}
+
+/* Card */
+.card {
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    border-radius: 16px;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.15);
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    height: 180px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #1e293b;
+    background: #020617;
+    color: #e2e8f0;
+    resize: none;
+    font-size: 14px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #38bdf8;
+    box-shadow: 0 0 10px #38bdf8;
+}
+
+/* Button */
+.scan-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #38bdf8, #6366f1);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.scan-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.6);
+}
+
+/* Results */
+.results {
+    margin-top: 25px;
+}
+
+.results h2 {
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+/* Violations List */
+#violations {
+    list-style: none;
+}
+
+#violations li {
+    background: rgba(239, 68, 68, 0.1);
+    border-left: 4px solid #ef4444;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    color: #fca5a5;
+    font-size: 14px;
+}
+
+/* Success state (optional for JS later) */
+#violations li.success {
+    background: rgba(34, 197, 94, 0.1);
+    border-left-color: #22c55e;
+    color: #86efac;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* Severity Styles (used by checkcfg.js) */
+
+#violations li.red {
+    background: rgba(239, 68, 68, 0.15);
+    border-left: 4px solid #ef4444;
+    color: #f87171;
+}
+
+#violations li.orange {
+    background: rgba(251, 191, 36, 0.15);
+    border-left: 4px solid #facc15;
+    color: #fde68a;
+}
+
+#violations li.green {
+    background: rgba(34, 197, 94, 0.15);
+    border-left: 4px solid #22c55e;
+    color: #86efac;
+}
+
+/* Code block inside results */
+#violations pre {
+    background: #020617;
+    padding: 8px;
+    border-radius: 6px;
+    margin-top: 6px;
+    font-size: 12px;
+    overflow-x: auto;
+    color: #38bdf8;
+}
+
+/* Remove link styling */
+#violations a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#violations a:hover {
+    text-decoration: underline;
+}
