@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CoD4 CFG Checker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <h1>🎮 CoD4 CFG Checker</h1>
+            <p>Analyze, validate, and secure your configuration files</p>
+        </header>
+
+        <main class="card">
+
+            <form onsubmit="checkCfg(); return false;">
+                <textarea 
+                    placeholder="Paste your Call of Duty 4 config here..."
+                    id="cfg"></textarea>
+
+                <button type="submit" class="scan-btn">
+                    🔍 Scan Config
+                </button>
+            </form>
+
+            <div class="results">
+                <h2>Scan Results</h2>
+                <ul id="violations" style="display:none;"></ul>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 CoD4 CFG Checker | Built for competitive fairness ⚡ by NeVi</p>
+        </footer>
+
+    </div>
+
+    <script src="js/checkcfg.js"></script>
+
+</body>
+</html>
