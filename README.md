@@ -10,9 +10,9 @@ CFG files play a critical role in gameplay performance and fairness. This tool e
 3.Ready for competitive or server use
 
 💡 Use Cases
-1.Competitive players verifying configs before matches
-2.Server admins enforcing fair play
-3.Developers analyzing CFG behavior
+1.Competitive players verifying configs before matches/
+2.Server admins enforcing fair play/
+3.Developers analyzing CFG behavior/
 
 📌 Status
 Actively developed and continuously improving with new detection rules and performance enhancements.
